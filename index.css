@@ -1,0 +1,231 @@
+/**
+* ! changing default styles of browser----------------------------------------------->>
+**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif ;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+/**
+* ! styles rules for content section -------------------------------------------------------->>
+*/
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #2d2a2a;
+    width: 55%;
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+.image{
+background-image: url("./npg.svg");
+/* border: 2px solid black; */
+height: 65%;
+background-repeat: no-repeat;
+background-size:contain;
+background-position: center;
+}
+/**
+* ! styles rules for socila media  section -------------------------------------------------------->>
+*/
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn-1,.btn-2{
+    padding: 5px 5px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #c4c4c4; */
+    border-radius: 8px;
+}
+.btn-1{
+    /* background-color: rgb(240, 245, 245); */
+    border-radius: 10px;
+    background: #2d2a2a;
+    box-shadow:  -20px 20px 60px #141313,
+                 20px -20px 60px #272525;
+                 color: #fff;
+}
+.btn-2{
+    /* background-color: rgb(240, 245, 245); */
+    color: #fff;
+    border-radius: 10px;
+    background: #2d2a2a;
+    box-shadow:  -20px 20px 60px #141313,
+                 20px -20px 60px #272525;
+}
+
+.or{
+    text-align: center;
+   color: #fff;
+}
+span{
+    font-weight: bold;
+    color: rgb(59, 146, 131);
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.question{
+    font-size: 15px;
+    color: rgb(253, 254, 255);
+  
+}
+
+/**
+* !----------------------- style rules for form section ------------------------------------>>
+**/
+
+/**-----------------------------------------------------------------------------------------
+*?                         here form is a tag so now use of dot and # ;
+-------------------------------------------------------------------------------------------**/
+form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* max-width: 400px; */
+width: 45%;
+box-shadow: 2px 2px 4px rgba(247, 240, 240, 0.1) ;
+padding: 50px;
+background-color: #2d2a2a;
+}
+/**
+ *? -----------------------------------CSS for GET STARTED--------------------------------------------------*/
+.title{
+
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:  rgb(59, 146, 131);
+    
+}
+/** 
+*?--------------------------------------CSS  for input box-----------------------------------------------------*/
+ form div input{
+
+width: 100%;
+height: 40px;
+/* border-radius: 8px; */
+/* outline: black; */
+/* border: 2px solid #c4c4c4; */
+padding: 0 30px ;
+/* box-shadow: 2px 2px 4px rgba(241, 235, 235, 0.1) ; */
+
+/* border-radius: 50px;
+background: #2d2a2a;
+box-shadow:  20px 20px 60px #1d1b1b,
+             -20px -20px 60px #3d3939; */
+             border-radius: 10px;
+background: #2d2a2a;
+box-shadow:  -20px 20px 60px #141313,
+             20px -20px 60px #272525;
+ }
+/** 
+*? ---------------Here label is inline element so first we need to make it block using(( display = block)) ----------------------*/
+
+ label{
+     display: block; 
+     margin-bottom: 5px;
+     color: rgb(59, 146, 131);
+ }
+
+ form div{
+     margin-bottom: 8px;
+     position: relative;
+ }
+
+ input:focus{
+     border: 2px solid rgb(59, 146, 131);
+ }
+
+/**
+* !--------------------------------------- style rule for form icons-------------------------------------------------------->>>>>>
+**/
+
+form div i {
+    position: absolute;
+    padding:10px ;
+}
+
+.failure-icon,.success-icon{
+    right: 0;
+    opacity: 0;
+}
+
+.failure-icon,
+.error {
+    color: red;
+}
+
+.success-icon{
+    color: green;
+}
+
+.error{
+   font-size: 14px; 
+   margin-top: 10px;
+}
+/**
+*! ---------------------------------------------------------style rule for button classes--------------------------------->>
+**/
+
+button{
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+   background-color: rgb(59, 146, 131);
+   border: 2px solid rgb(59, 146, 131);
+   border-radius: 8px;
+   color: #fff;
+   font-size: 20px;
+   cursor: pointer;
+   box-shadow: 2px 2px 4px rgba(255, 254, 254, 0.1) ;
+   transition: all 0.1s ease;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+
+
+/**
+* ! media queries are here
+**/
+@media(max-width:900px){
+    .container{
+        flex-direction: column;
+
+    }
+    form,.content{
+width: 100% !important;
+    }
+    .btn{
+        flex-direction: column;
+    }
+    .image{
+        height: 70vh;
+    }
+}
+@media(max-width:425px){
+form{
+    padding: 20px;
+}
+}

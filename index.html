@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>form validation </title>
+</head>
+<body>
+    
+    <div class="container">
+<div class="content">
+    
+       
+
+   
+    <div class="image">
+        <!-- <img src="pg.svg" alt=""> -->
+    </div>
+    <!-- <div class="text">
+        start for free 
+    </div> -->
+</div>
+        <form id="form" >
+            <div class="social">
+
+                <div class="title">Get started </div>
+                <div class="question">
+                    Already have an account ? <br>
+                    <span>
+                        Sign in
+                    </span>
+                </div>
+                <!-- social  media buttons -->
+                <div class="btn">
+                    <div class="btn-1 ">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+                        Sign Up
+                    </div>
+                    <div class=" btn-2">
+                    <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
+                    Sign Up
+                </div> 
+                </div>
+                <div class="or">Or</div>
+            </div>
+            <!-- ------div container for form ---------------------------------------- -->
+           
+            <!----------------------------------------------------------------- /** 
+                * ! username input   **/
+            ------------------------------------------------------------------------->
+            <div>
+                <label for="username">Username</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="xyz">
+                <i class="fa-solid fa-circle-exclamation failure-icon "></i>
+                <i class="fa-solid fa-circle-check success-icon "></i>
+                <!-- to show alert we are using error class  -->
+                <div class="error"></div>
+            </div>
+
+               <!-------------------------------------------------------------------- /** 
+                * ! email input   **/
+            ---------------------------------------------------------------------------->
+            <div>
+                <label for="email">Email</label>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="Email "id="email" placeholder="abc@gmail.com">
+                <i class="fa-solid fa-circle-exclamation failure-icon "></i>
+                <i class="fa-solid fa-circle-check success-icon "></i>
+                <!-- to show alert we are using error class  -->
+                <div class="error"></div>
+            </div>
+               <!----------------------------- ----------------------------------------- /** 
+                * ! password input   **/
+            ------------------------------------------------------------------------------->
+            <div>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="password here">
+                <i class="fa-solid fa-circle-exclamation failure-icon "></i>
+                <i class="fa-solid fa-circle-check success-icon "></i>
+                <!-- to show alert we are using error class  -->
+                <div class="error"></div>
+            </div>
+            <!----------------------------- submit button -------------------------------------->
+          <button type="submit" id="submit"> Submit</button>
+        </form>
+
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
